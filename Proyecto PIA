@@ -1,0 +1,9 @@
+library(dplyr)
+help("starwars") #informacion acerca del data
+head(starwars)#primeros 6 registros del data
+data1<-starwars%>%filter(sex=="none")
+View(data1)
+data2<-starwars%>%arrange(mass)%>%head(6)
+View(data2)
+data4<-starwars%>%arrange(desc(mass))%>%head(6)
+View(data4)
